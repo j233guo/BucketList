@@ -14,6 +14,8 @@
 		C98597EC28F321EE000ED2A0 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597EB28F321EE000ED2A0 /* BucketListTests.swift */; };
 		C98597F628F321EE000ED2A0 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597F528F321EE000ED2A0 /* BucketListUITests.swift */; };
 		C98597F828F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597F728F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift */; };
+		C985980628F32225000ED2A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980528F32225000ED2A0 /* Helpers.swift */; };
+		C985980928F32420000ED2A0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980828F32420000ED2A0 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C98597F128F321EE000ED2A0 /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98597F528F321EE000ED2A0 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		C98597F728F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C985980528F32225000ED2A0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C985980828F32420000ED2A0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		C98597D928F321EE000ED2A0 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				C985980728F32411000ED2A0 /* Model */,
+				C985980428F3220E000ED2A0 /* Helper */,
 				C98597DA28F321EE000ED2A0 /* BucketListApp.swift */,
 				C98597DC28F321EE000ED2A0 /* ContentView.swift */,
 				C98597DE28F321EE000ED2A0 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				C98597F728F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift */,
 			);
 			path = BucketListUITests;
+			sourceTree = "<group>";
+		};
+		C985980428F3220E000ED2A0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C985980528F32225000ED2A0 /* Helpers.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C985980728F32411000ED2A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C985980828F32420000ED2A0 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98597DD28F321EE000ED2A0 /* ContentView.swift in Sources */,
+				C985980628F32225000ED2A0 /* Helpers.swift in Sources */,
+				C985980928F32420000ED2A0 /* Location.swift in Sources */,
 				C98597DB28F321EE000ED2A0 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

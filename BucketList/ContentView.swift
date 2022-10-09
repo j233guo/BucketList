@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var authState = AuthState.fail
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if authState == .success || authState == .unavailable {
+                Text("Unlocked")
+            } else {
+                Text("Locked")
+            }
         }
         .padding()
+        .onAppear(perform: {
+            let status = authenticate()
+            print(status)
+            authState = status
+        })
     }
 }
 
