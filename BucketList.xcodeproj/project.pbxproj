@@ -16,6 +16,7 @@
 		C98597F828F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597F728F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift */; };
 		C985980628F32225000ED2A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980528F32225000ED2A0 /* Helpers.swift */; };
 		C985980928F32420000ED2A0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980828F32420000ED2A0 /* Location.swift */; };
+		C985980E28F341BD000ED2A0 /* AddLocationBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C98597F728F321EE000ED2A0 /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C985980528F32225000ED2A0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C985980828F32420000ED2A0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		C98597D928F321EE000ED2A0 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				C985980C28F341AB000ED2A0 /* View */,
 				C985980728F32411000ED2A0 /* Model */,
 				C985980428F3220E000ED2A0 /* Helper */,
 				C98597DA28F321EE000ED2A0 /* BucketListApp.swift */,
@@ -147,6 +150,14 @@
 				C985980828F32420000ED2A0 /* Location.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C985980C28F341AB000ED2A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 				C98597DD28F321EE000ED2A0 /* ContentView.swift in Sources */,
 				C985980628F32225000ED2A0 /* Helpers.swift in Sources */,
 				C985980928F32420000ED2A0 /* Location.swift in Sources */,
+				C985980E28F341BD000ED2A0 /* AddLocationBtn.swift in Sources */,
 				C98597DB28F321EE000ED2A0 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

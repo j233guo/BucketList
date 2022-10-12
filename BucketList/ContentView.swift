@@ -5,25 +5,39 @@
 //  Created by Jiaming Guo on 2022-10-09.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
     @State private var authState = AuthState.fail
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+    @State private var locations = [Location]()
+    
+    func addNewLocation() {
+        let newLocation = Location(id: UUID(), name: "New Location", description: "A new location", latitude: mapRegion.center.latitude, longtitude: mapRegion.center.longitude)
+        locations.append(newLocation)
+    }
     
     var body: some View {
-        VStack {
-            if authState == .success || authState == .unavailable {
-                Text("Unlocked")
-            } else {
-                Text("Locked")
+        ZStack {
+            Map(coordinateRegion: $mapRegion, annotationItems: locations, annotationContent: { location in
+                MapMarker(coordinate: location.coordinate)
+            })
+                .ignoresSafeArea()
+            Circle()
+                .fill(.blue)
+                .opacity(0.3)
+                .frame(width: 32, height: 32)
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    AddLocationBtn(action: {
+                        addNewLocation()
+                    })
+                }
             }
         }
-        .padding()
-        .onAppear(perform: {
-            let status = authenticate()
-            print(status)
-            authState = status
-        })
     }
 }
 
