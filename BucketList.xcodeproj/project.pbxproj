@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C93C844F28F9007C005865B4 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C844E28F9007C005865B4 /* CustomMapAnnotation.swift */; };
 		C93C845128F902C2005865B4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C845028F902C2005865B4 /* EditView.swift */; };
+		C93C845328F90637005865B4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C845228F90637005865B4 /* Result.swift */; };
 		C98597DB28F321EE000ED2A0 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597DA28F321EE000ED2A0 /* BucketListApp.swift */; };
 		C98597DD28F321EE000ED2A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98597DC28F321EE000ED2A0 /* ContentView.swift */; };
 		C98597DF28F321EE000ED2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98597DE28F321EE000ED2A0 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		C93C844E28F9007C005865B4 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		C93C845028F902C2005865B4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		C93C845228F90637005865B4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		C98597D728F321EE000ED2A0 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98597DA28F321EE000ED2A0 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		C98597DC28F321EE000ED2A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C985980828F32420000ED2A0 /* Location.swift */,
+				C93C845228F90637005865B4 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				C985980928F32420000ED2A0 /* Location.swift in Sources */,
 				C93C845128F902C2005865B4 /* EditView.swift in Sources */,
 				C985980E28F341BD000ED2A0 /* AddLocationBtn.swift in Sources */,
+				C93C845328F90637005865B4 /* Result.swift in Sources */,
 				C98597DB28F321EE000ED2A0 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
