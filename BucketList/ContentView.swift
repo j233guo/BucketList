@@ -10,15 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var authState = AuthState.fail
-    @StateObject private var viewModel = ViewModel()
+    @StateObject private var vm = ViewModel()
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations, annotationContent: { location in
+            Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location in
                 MapAnnotation(coordinate: location.coordinate, content: {
                     CustomMapAnnotation(name: location.name)
                         .onTapGesture {
-                            viewModel.selectedPlace = location
+                            vm.selectedPlace = location
                         }
                 })
             })
@@ -32,14 +32,14 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     AddLocationBtn(action: {
-                        viewModel.addNewLocation()
+                        vm.addNewLocation()
                     })
                 }
             }
         }
-        .sheet(item: $viewModel.selectedPlace, content: { place in
+        .sheet(item: $vm.selectedPlace, content: { place in
             EditView(location: place, onSave: { newLocation in
-                viewModel.update(location: newLocation)
+                vm.update(location: newLocation)
             })
         })
     }

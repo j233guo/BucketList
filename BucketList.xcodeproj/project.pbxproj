@@ -21,6 +21,7 @@
 		C985980628F32225000ED2A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980528F32225000ED2A0 /* Helpers.swift */; };
 		C985980928F32420000ED2A0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980828F32420000ED2A0 /* Location.swift */; };
 		C985980E28F341BD000ED2A0 /* AddLocationBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */; };
+		C9AA162B28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AA162A28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C985980528F32225000ED2A0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C985980828F32420000ED2A0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationBtn.swift; sourceTree = "<group>"; };
+		C9AA162A28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C985980528F32225000ED2A0 /* Helpers.swift */,
+				C9AA162A28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				C985980928F32420000ED2A0 /* Location.swift in Sources */,
 				C93C845528F911D4005865B4 /* ContentView-ViewModel.swift in Sources */,
 				C93C845128F902C2005865B4 /* EditView.swift in Sources */,
+				C9AA162B28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift in Sources */,
 				C985980E28F341BD000ED2A0 /* AddLocationBtn.swift in Sources */,
 				C93C845328F90637005865B4 /* Result.swift in Sources */,
 				C98597DB28F321EE000ED2A0 /* BucketListApp.swift in Sources */,
