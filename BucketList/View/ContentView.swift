@@ -9,16 +9,16 @@ import MapKit
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var vm = ViewModel()
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         ZStack {
-            if vm.isUnlocked {
-                Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location in
+            if viewModel.isUnlocked {
+                Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations, annotationContent: { location in
                     MapAnnotation(coordinate: location.coordinate, content: {
                         CustomMapAnnotation(name: location.name)
                             .onTapGesture {
-                                vm.selectedPlace = location
+                                viewModel.selectedPlace = location
                             }
                     })
                 })
@@ -32,13 +32,13 @@ struct ContentView: View {
                     HStack {
                         Spacer()
                         AddLocationBtn(action: {
-                            vm.addNewLocation()
+                            viewModel.addNewLocation()
                         })
                     }
                 }
             } else {
                 Button("Unlock Places") {
-                    vm.authenticate()
+                    viewModel.authenticate()
                 }
                 .padding()
                 .background(.blue)
@@ -47,10 +47,17 @@ struct ContentView: View {
             }
             
         }
-        .sheet(item: $vm.selectedPlace, content: { place in
+        .sheet(item: $viewModel.selectedPlace, content: { place in
             EditView(location: place, onSave: { newLocation in
-                vm.update(location: newLocation)
+                viewModel.update(location: newLocation)
             })
+        })
+        .alert("Authentication Failed", isPresented: $viewModel.authErrorAlert, actions: {
+            Button("Retry") {
+                viewModel.authenticate()
+            }
+        }, message: {
+            Text("We are unable to authenticate you. Please try again.")
         })
     }
 }

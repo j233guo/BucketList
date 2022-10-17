@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C900267228FDE71800D5CE71 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C900267128FDE71800D5CE71 /* EditView-ViewModel.swift */; };
 		C93C844F28F9007C005865B4 /* CustomMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C844E28F9007C005865B4 /* CustomMapAnnotation.swift */; };
 		C93C845128F902C2005865B4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C845028F902C2005865B4 /* EditView.swift */; };
 		C93C845328F90637005865B4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C845228F90637005865B4 /* Result.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C900267128FDE71800D5CE71 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 		C93C844E28F9007C005865B4 /* CustomMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapAnnotation.swift; sourceTree = "<group>"; };
 		C93C845028F902C2005865B4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		C93C845228F90637005865B4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -85,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C900267028FDE6F700D5CE71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C93C845428F911D3005865B4 /* ContentView-ViewModel.swift */,
+				C900267128FDE71800D5CE71 /* EditView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C98597CE28F321EE000ED2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +119,11 @@
 		C98597D928F321EE000ED2A0 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				C900267028FDE6F700D5CE71 /* ViewModel */,
 				C985980C28F341AB000ED2A0 /* View */,
 				C985980728F32411000ED2A0 /* Model */,
 				C985980428F3220E000ED2A0 /* Helper */,
 				C98597DA28F321EE000ED2A0 /* BucketListApp.swift */,
-				C98597DC28F321EE000ED2A0 /* ContentView.swift */,
-				C93C845428F911D3005865B4 /* ContentView-ViewModel.swift */,
 				C98597DE28F321EE000ED2A0 /* Assets.xcassets */,
 				C98597E028F321EE000ED2A0 /* Preview Content */,
 			);
@@ -168,6 +178,7 @@
 				C985980D28F341BD000ED2A0 /* AddLocationBtn.swift */,
 				C93C844E28F9007C005865B4 /* CustomMapAnnotation.swift */,
 				C93C845028F902C2005865B4 /* EditView.swift */,
+				C98597DC28F321EE000ED2A0 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 				C93C844F28F9007C005865B4 /* CustomMapAnnotation.swift in Sources */,
 				C98597DD28F321EE000ED2A0 /* ContentView.swift in Sources */,
 				C985980928F32420000ED2A0 /* Location.swift in Sources */,
+				C900267228FDE71800D5CE71 /* EditView-ViewModel.swift in Sources */,
 				C93C845528F911D4005865B4 /* ContentView-ViewModel.swift in Sources */,
 				C93C845128F902C2005865B4 /* EditView.swift in Sources */,
 				C9AA162B28FC9B0C00531951 /* FileManager-DocumentsDirectory.swift in Sources */,

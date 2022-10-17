@@ -15,14 +15,14 @@ struct AddLocationBtn: View {
             action()
         } label: {
             Image(systemName: "plus")
+                .padding()
                 .padding(.horizontal)
+                .background(.black.opacity(0.75))
+                .foregroundColor(.white)
+                .font(.title)
+                .clipShape(Circle())
+                .padding(.trailing)
         }
-        .padding()
-        .background(.black.opacity(0.75))
-        .foregroundColor(.white)
-        .font(.title)
-        .clipShape(Circle())
-        .padding(.trailing)
     }
 }
 

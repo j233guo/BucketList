@@ -9,16 +9,13 @@ import Foundation
 import LocalAuthentication
 import MapKit
 
-class ViewModel: ObservableObject {
-    
-}
-
 extension ContentView {
-    class ViewModel: ObservableObject {
+    @MainActor class ViewModel: ObservableObject {
         @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
         @Published private(set) var locations: [Location]
         @Published var selectedPlace: Location?
         @Published var isUnlocked = false
+        @Published var authErrorAlert = false
         
         func addNewLocation() {
             let newLocation = Location(id: UUID(), name: "New Location", description: "A new location", latitude: mapRegion.center.latitude, longtitude: mapRegion.center.longitude)
@@ -65,11 +62,12 @@ extension ContentView {
                             self.isUnlocked = true
                         }
                     } else {
-                        // error
+                        self.authErrorAlert = true
                     }
                 })
             } else {
                 // No biometrics
+                self.isUnlocked = true
             }
         }
     }
